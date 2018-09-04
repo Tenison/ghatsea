@@ -28,8 +28,13 @@ class Admin extends CI_Controller {
     } 
 
     function index() {
-    	$data = array();
-    	$this->load_view('admin/content',$data);
+    	$this->load->view('admin/template/landing');
+    	
+    }
+
+    function home(){
+      $data = array();
+      $this->load_view('admin/content',$data);
     }
 
    	public function addcat()

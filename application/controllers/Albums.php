@@ -16,11 +16,10 @@ class Albums extends CI_Controller {
                 'albums'    => $this->Mgallery->GetAlbumList(),
                 'title'    => 'Albums'
             );
-        $this->load->view('index', $data);
+        $this->load->view('album/index', $data);
       }
 
 	public function album($param='null',$id='null') {
-
         if( $this->input->post('process') == 'true' ) {
             if($this->Mgallery->Save()) {
             	echo "Success";
@@ -46,13 +45,13 @@ class Albums extends CI_Controller {
                 'record' => $this->Mgallery->GetAlbumDetails($param),
                 'picturelist'   => $this->Mgallery->GetPictureList($param)
                 );
-            $this->load->view('index', $data_content);
+            $this->load->view('album/index', $data_content);
         }                 
         elseif(isset($param) && $param=="create") {  
           $data = array (
                 'title'    => 'Add/Edit Album'
             );
-          $this->load->view('index', $data);
+          $this->load->view('album/index', $data);
         }
         elseif(isset($param) && $param=="edit" && is_numeric($id)) {  
           $data_content = array (
@@ -60,7 +59,7 @@ class Albums extends CI_Controller {
                 'picturelist' => $this->Mgallery->GetPictureList($id),
                 'record' => $this->Mgallery->GetAlbumDetails($id)
             );
-          $this->load->view('index', $data_content);
+          $this->load->view('album/index', $data_content);
         }
         elseif(isset($param) && $param=="deactivate" && is_numeric($id)) {
             $this->deactivate($id);

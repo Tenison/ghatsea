@@ -66,11 +66,11 @@
 <!-- blueimp Gallery styles -->
 <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
-<link rel="stylesheet" href="./application/third_party/Fileupload/css/jquery.fileupload.css">
-<link rel="stylesheet" href="./application/third_party/Fileupload/css/jquery.fileupload-ui.css">
+<link rel="stylesheet" href="<?php echo base_url('third_part/Fileupload/css/jquery.fileupload.css')?>">
+<link rel="stylesheet" href="<?php echo base_url('third_part/Fileupload/css/jquery.fileupload-ui.css')?>">
 <!-- CSS adjustments for browsers with JavaScript disabled -->
-<noscript><link rel="stylesheet" href="./application/third_party/Fileupload/css/jquery.fileupload-noscript.css"></noscript>
-<noscript><link rel="stylesheet" href="./application/third_party/Fileupload/css/jquery.fileupload-ui-noscript.css"></noscript>
+<noscript><link rel="stylesheet" href="<?php echo base_url('third_part/Fileupload/css/jquery.fileupload-noscript.css')?>"></noscript>
+<noscript><link rel="stylesheet" href="<?php echo base_url('third_part/Fileupload/css/jquery.fileupload-ui-noscript.css')?>"></noscript>
 
 <!-- The file upload form used as target for the file upload widget -->
 <fieldset id="fileupload" action="ablums/do_upload" method="POST" enctype="multipart/form-data">
@@ -202,7 +202,7 @@
 
 </script>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-<script src="./application/third_party/Fileupload/js/vendor/jquery.ui.widget.js"></script>
+<script src="<?php echo base_url('third_part/Fileupload/js/vendor/jquery.ui.widget.js')?>"></script>
 <!-- The Templates plugin is included to render the upload/download listings -->
 <script src="https://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
 <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
@@ -213,17 +213,17 @@
 <!-- blueimp Gallery script -->
 <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-<script src="./application/third_party/Fileupload/js/jquery.iframe-transport.js"></script>
+<script src="<?php echo base_url('third_part/Fileupload/js/vendor/jquery.ui.widget.js')?>./application/third_party/Fileupload/js/jquery.iframe-transport.js"></script>
 <!-- The basic File Upload plugin -->
-<script src="./application/third_party/Fileupload/js/jquery.fileupload.js"></script>
+<script src="<?php echo base_url('third_part/Fileupload/js/jquery.fileupload.js')?>"></script>
 <!-- The File Upload processing plugin -->
-<script src="./application/third_party/Fileupload/js/jquery.fileupload-process.js"></script>
+<script src="<?php echo base_url('third_part/Fileupload/js/jquery.fileupload-process.js')?>"></script>
 <!-- The File Upload image preview & resize plugin -->
-<script src="./application/third_party/Fileupload/js/jquery.fileupload-image.js"></script>
+<script src="<?php echo base_url('third_part/Fileupload/js/jquery.fileupload-image.js')?>"></script>
 <!-- The File Upload validation plugin -->
-<script src="./application/third_party/Fileupload/js/jquery.fileupload-validate.js"></script>
+<script src="<?php echo base_url('third_part/Fileupload/js/jquery.fileupload-validate.js')?>"></script>
 <!-- The File Upload user interface plugin -->
-<script src="./application/third_party/Fileupload/js/jquery.fileupload-ui.js"></script>
+<script src="<?php echo base_url('third_part/Fileupload/js/jquery.fileupload-ui.js')?>"></script>
 
 
 <script  type="text/javascript">
