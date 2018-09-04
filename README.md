@@ -1,1 +1,1 @@
-# codeigniter news magazine
+# project ghatsea
